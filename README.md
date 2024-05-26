@@ -8,3 +8,6 @@ _Accepted:_ $6$
 _Tried:_ $1$
 
 ## PS - 3
+_Accepted:_ $6$
+
+_Don't yet understand:_ $2$
