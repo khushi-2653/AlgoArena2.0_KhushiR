@@ -11,3 +11,8 @@ _Tried:_ $1$
 _Accepted:_ $6$
 
 _Tried:_ $2$
+
+## PS - 3
+_Accepted:_ $4$
+
+_Tried:_ $$
