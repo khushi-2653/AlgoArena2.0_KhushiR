@@ -15,4 +15,4 @@ _Tried:_ $2$
 ## PS - 4
 _Accepted:_ $6$
 
-_Tried:_ $$
+_Tried:_ $4$
