@@ -12,7 +12,7 @@ _Accepted:_ $6$
 
 _Tried:_ $2$
 
-## PS - 3
-_Accepted:_ $4$
+## PS - 4
+_Accepted:_ $5$
 
 _Tried:_ $$
