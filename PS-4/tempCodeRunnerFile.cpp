@@ -8,7 +8,7 @@
 // typedef tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update> ordered_multiset;
 
 #define pb push_back
-#define int int64_t
+//#define int int64_t
 #define loop(n) for(int i = 0 ; i < n ; i++)
 #define nest(m) for(int j = 0 ; j < m ; j++)
 #define fr pair<int,int>::first
@@ -28,27 +28,20 @@ int32_t main(){
     while(t--){
         int n, m, b, mod;
         cin >> n >> m >> b >> mod;
-        //vi a(n);
-        int a[n];
+        vi a(n);
         loop(n) cin >> a[i];
-        int dp[m + 1][b + 1]; 
-        for(int i = 0 ; i <= m ; i++){
-            for(int j = 0 ; j <= b ; j++) dp[i][j] = 0;
-        }
+        int dp[m + 1][b + 1] = {0}; 
         dp[0][0] = 1;
         loop(n){
             //for every programmer
-            for(int j = 0 ; j < m ; j++){
+            for(int j = 1 ; j <= m ; j++){
                 for(int k = 0 ; k + a[i] <= b ; k++){
-                    dp[j + 1][k + a[i]] = (dp[j + 1][k + a[i]] + dp[j][k]) % mod;
+                    dp[j][k + a[i]] = (dp[j][k + a[i]] + dp[j - 1][k]) % mod;
                 }
             }
         }
         int ans = 0;
-        for(int i = 0 ; i <= b ; i++){ 
-            //cout << dp[m][i] << "\n";
-            ans = (ans + dp[m][i]) % mod;
-        }
+        for(int i = 0 ; i <= b ; i++) ans = (ans + dp[m][i]) % mod;
         cout << ans << "\n";
     }
     return 0;
