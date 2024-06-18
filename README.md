@@ -20,4 +20,4 @@ _Tried:_ $4$
 ## PS - 5
 _Accepted:_ $3$
 
-_Tried:_ $1$
+_Tried:_ $2$
