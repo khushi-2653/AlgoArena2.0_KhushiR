@@ -18,6 +18,6 @@ _Accepted:_ $6$
 _Tried:_ $4$
 
 ## PS - 5
-_Accepted:_ $5$
+_Accepted:_ $6$
 
 _Tried:_ $2$
